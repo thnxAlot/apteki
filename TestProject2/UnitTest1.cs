@@ -18,7 +18,7 @@ namespace TestProject2
         {
             var path = @"C:\Users\mikl1\Downloads\Apteki2.xml";
             var res = check_class.check_tree(path);
-            Assert.AreEqual(res, true);
+            Assert.AreEqual(res, false);
         }
     }
 }
