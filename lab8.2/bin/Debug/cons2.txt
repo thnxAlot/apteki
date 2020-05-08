@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<apteki>
+  <aptek number="10">
+    <medicine type="pills1">
+      <data var="10.11.2001">
+        <srok>15</srok>
+        <price>45</price>
+        <ammount>10</ammount>
+      </data>
+    </medicine>
+    <medicine type="pills2">
+      <data var="04.12.2006">
+        <srok>а0</srok>
+        <price>600</price>
+        <ammount>50</ammount>
+      </data>
+    </medicine>
+    <medicine type="tablets1">
+      <data var="12.12.2031">
+        <srok>34</srok>
+        <price>350</price>
+        <ammount>120</ammount>
+      </data>
+    </medicine>
+  </aptek>
+  <aptek number="11">
+    <medicine type="pills1">
+      <data var="10.02.2012">
+        <srok>50</srok>
+        <price>100</price>
+        <ammount>200</ammount>
+      </data>
+    </medicine>
+    <medicine type="pills2">
+      <data var="02.03.2006">
+        <srok>5</srok>
+        <price>34</price>
+        <ammount>5</ammount>
+      </data>
+    </medicine>
+    <medicine type="tablets1">
+      <data var="10.12.2006">
+        <srok>500</srok>
+        <price>3</price>
+        <ammount>500</ammount>
+      </data>
+    </medicine>
+    <medicine type="tablets2">
+      <data var="12.12.2007">
+        <srok>133</srok>
+        <price>565</price>
+        <ammount>343</ammount>
+      </data>
+    </medicine>
+  </aptek>
+</apteki>

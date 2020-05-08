@@ -13,6 +13,119 @@ using System.Xml.Linq;
 
 namespace lab8._2
 {
+    public class check_class
+    {
+        public bool check_tree(string path)
+        {
+            XElement root = XElement.Load(path);
+
+            IEnumerable<XElement> apteka;
+
+
+            apteka =
+                from el in root.Elements("aptek")
+                    // where (string)el.Attribute("number") == apteks
+                    select el;
+
+
+
+            foreach (XElement apk in apteka)
+            {
+                int a;
+                if (!int.TryParse(apk.Attribute("number").Value, out a))
+                {
+
+                    return false;
+                }
+                else
+                {
+                    if (a <= 0)
+                    {
+
+                        return false;
+                    }
+                }
+
+
+                IEnumerable<XElement> medicine;
+
+                medicine =
+                from el in apk.Elements("medicine")
+                        //where (string)el.Attribute("number") == "10"
+                select el;
+
+
+                foreach (XElement meds in medicine)
+                {
+
+                    IEnumerable<XElement> data;
+
+                    data =
+                        from el in meds.Elements("data")
+                            //where (string)el.Attribute("number") == "10"
+                            select el;
+
+
+                    foreach (XElement dats in data)
+                    {
+
+
+
+
+
+                        int b;
+                        if (!int.TryParse(dats.Element("srok").Value, out b))
+                        {
+
+                            return false;
+                        }
+                        else
+                        {
+                            if (b <= 0)
+                            {
+
+                                return false;
+                            }
+                        }
+                        if (!int.TryParse(dats.Element("ammount").Value, out b))
+                        {
+
+                            return false;
+                        }
+                        else
+                        {
+                            if (b <= 0)
+                            {
+
+                                return false;
+                            }
+                        }
+                        if (!int.TryParse(dats.Element("price").Value, out b))
+                        {
+
+                            return false;
+                        }
+                        else
+                        {
+                            if (b <= 0)
+                            {
+
+                                return false;
+                            }
+                        }
+
+
+
+                    }
+
+                }
+
+            }
+            return true;
+        }
+
+    }
+
     public partial class info_form : Form
     {
         public static info_form _i;
@@ -68,6 +181,32 @@ namespace lab8._2
             
             foreach (XElement apk in apteka)
             {
+                int a;
+                if(!int.TryParse(apk.Attribute("number").Value,out a))
+                {
+                    DialogResult result = MessageBox.Show(
+                                    "одна из аптек имела неверный номер",
+                                    "ERROR",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Error,
+                                    MessageBoxDefaultButton.Button1
+                                    );
+                    return;
+                }
+                else
+                {
+                    if(a<=0)
+                    {
+                        DialogResult result = MessageBox.Show(
+                                    "одна из аптек имела неверный номер",
+                                    "ERROR",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Error,
+                                    MessageBoxDefaultButton.Button1
+                                    );
+                        return;
+                    }
+                }
                 string new_zapis="";
                 string otstup = "";
                 richTextBox1.Text += "Аптека ";
@@ -133,6 +272,82 @@ namespace lab8._2
                             
                             )
                         {
+                            int b;
+                            if (!int.TryParse(dats.Element("srok").Value, out b))
+                            {
+                                DialogResult result = MessageBox.Show(
+                                                "один из сроков имел неверное значение",
+                                                "ERROR",
+                                                MessageBoxButtons.OK,
+                                                MessageBoxIcon.Error,
+                                                MessageBoxDefaultButton.Button1
+                                                );
+                                return;
+                            }
+                            else
+                            {
+                                if (b <= 0)
+                                {
+                                    DialogResult result = MessageBox.Show(
+                                                "один из сроков имел неверное значение",
+                                                "ERROR",
+                                                MessageBoxButtons.OK,
+                                                MessageBoxIcon.Error,
+                                                MessageBoxDefaultButton.Button1
+                                                );
+                                    return;
+                                }
+                            }
+                            if (!int.TryParse(dats.Element("ammount").Value, out b))
+                            {
+                                DialogResult result = MessageBox.Show(
+                                                "одно количество имело неверное значение",
+                                                "ERROR",
+                                                MessageBoxButtons.OK,
+                                                MessageBoxIcon.Error,
+                                                MessageBoxDefaultButton.Button1
+                                                );
+                                return;
+                            }
+                            else
+                            {
+                                if (b <= 0)
+                                {
+                                    DialogResult result = MessageBox.Show(
+                                                "одно количество имело неверное значение",
+                                                "ERROR",
+                                                MessageBoxButtons.OK,
+                                                MessageBoxIcon.Error,
+                                                MessageBoxDefaultButton.Button1
+                                                );
+                                    return;
+                                }
+                            }
+                            if (!int.TryParse(dats.Element("price").Value, out b))
+                            {
+                                DialogResult result = MessageBox.Show(
+                                                "одна из цен имела неверное значение",
+                                                "ERROR",
+                                                MessageBoxButtons.OK,
+                                                MessageBoxIcon.Error,
+                                                MessageBoxDefaultButton.Button1
+                                                );
+                                return;
+                            }
+                            else
+                            {
+                                if (b <= 0)
+                                {
+                                    DialogResult result = MessageBox.Show(
+                                                "одна из цен имела неверное значение",
+                                                "ERROR",
+                                                MessageBoxButtons.OK,
+                                                MessageBoxIcon.Error,
+                                                MessageBoxDefaultButton.Button1
+                                                );
+                                    return;
+                                }
+                            }
                             richTextBox1.Text += otstup + "срок " + dats.Element("srok").Value + " дней\n";
                             richTextBox1.Text += otstup + "цена за одну упаковку " + dats.Element("price").Value + " рублей\n";
                             richTextBox1.Text += otstup + "количество " + dats.Element("ammount").Value + " упаковок\n";
