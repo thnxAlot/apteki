@@ -13,9 +13,9 @@ using System.Xml.Linq;
 
 namespace lab8._2
 {
-    public class check_class
+    public static class check_class
     {
-        public bool check_tree(string path)
+        public static bool check_tree(string path)
         {
             XElement root = XElement.Load(path);
 

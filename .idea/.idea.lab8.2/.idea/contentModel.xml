@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\mikl1\.nuget\packages\microsoft.net.test.sdk\16.2.0\build\netcoreapp1.0" t="Include">
+      <e p="Microsoft.NET.Test.Sdk.Program.cs" t="Include" />
+    </e>
+    <e p="C:\Users\mikl1\.nuget\packages\mstest.testadapter\2.0.0\build\_common\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll" t="Include" />
+    <e p="C:\Users\mikl1\.nuget\packages\mstest.testadapter\2.0.0\build\_common\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll" t="Include" />
+    <e p="C:\Users\mikl1\.nuget\packages\mstest.testadapter\2.0.0\build\netcoreapp1.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" t="Include" />
+    <e p="C:\Users\mikl1\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\mikl1\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_lab8.2.1306811516.00" t="ExcludeRecursive" />
+    <e p="C:\Users\mikl1\AppData\Roaming\JetBrains\Rider2020.1\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\mikl1\AppData\Roaming\JetBrains\Rider2020.1\extensions" t="IncludeRecursive" />
+    <e p="S:\Lessons\6\Prog\Lab8\Apteki" t="IncludeFlat">
+      <e p="lab8.2" t="IncludeRecursive">
+        <e p="add_row.cs" t="Include" />
+        <e p="add_row.Designer.cs" t="Include" />
+        <e p="add_row.resx" t="Include" />
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="filter.cs" t="Include" />
+        <e p="filter.Designer.cs" t="Include" />
+        <e p="filter.resx" t="Include" />
+        <e p="Form1.cs" t="Include" />
+        <e p="Form1.Designer.cs" t="Include" />
+        <e p="Form1.resx" t="Include" />
+        <e p="info_form.cs" t="Include" />
+        <e p="info_form.Designer.cs" t="Include" />
+        <e p="info_form.resx" t="Include" />
+        <e p="lab8.2.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+      </e>
+      <e p="lab8.2.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="TestProject2" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="TestProject2.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="TestProject2.csproj" t="IncludeRecursive" />
+        <e p="UnitTest1.cs" t="Include" />
+      </e>
+    </e>
+  </component>
+</project>

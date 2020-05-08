@@ -10,3 +10,15 @@ D:\учеба\прога\лабы\lab8.2\lab8.2\obj\Debug\lab8.2.pdb
 D:\учеба\прога\лабы\lab8.2\lab8.2\obj\Debug\lab8._2.filter.resources
 D:\учеба\прога\лабы\lab8.2\lab8.2\obj\Debug\lab8._2.add_row.resources
 D:\учеба\прога\лабы\lab8.2\lab8.2\obj\Debug\lab8._2.check_class.resources
+S:\Lessons\6\Prog\Lab8\Apteki\lab8.2\bin\Debug\lab8.2.exe.config
+S:\Lessons\6\Prog\Lab8\Apteki\lab8.2\bin\Debug\lab8.2.exe
+S:\Lessons\6\Prog\Lab8\Apteki\lab8.2\bin\Debug\lab8.2.pdb
+S:\Lessons\6\Prog\Lab8\Apteki\lab8.2\obj\Debug\lab8.2.csprojAssemblyReference.cache
+S:\Lessons\6\Prog\Lab8\Apteki\lab8.2\obj\Debug\lab8._2.add_row.resources
+S:\Lessons\6\Prog\Lab8\Apteki\lab8.2\obj\Debug\lab8._2.filter.resources
+S:\Lessons\6\Prog\Lab8\Apteki\lab8.2\obj\Debug\lab8._2.Form1.resources
+S:\Lessons\6\Prog\Lab8\Apteki\lab8.2\obj\Debug\lab8._2.check_class.resources
+S:\Lessons\6\Prog\Lab8\Apteki\lab8.2\obj\Debug\lab8._2.Properties.Resources.resources
+S:\Lessons\6\Prog\Lab8\Apteki\lab8.2\obj\Debug\lab8.2.csproj.GenerateResource.cache
+S:\Lessons\6\Prog\Lab8\Apteki\lab8.2\obj\Debug\lab8.2.exe
+S:\Lessons\6\Prog\Lab8\Apteki\lab8.2\obj\Debug\lab8.2.pdb
