@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<apteki>
+  <aptek number="11">
+    <medicine type="12">
+      <data var="02.05.2020">
+        <srok>12</srok>
+        <price>12</price>
+        <ammount>12</ammount>
+      </data>
+    </medicine>
+  </aptek>
+</apteki>
